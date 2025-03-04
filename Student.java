@@ -16,4 +16,10 @@ class Student { // Defining a class named Student
         this.batch = batch;
         this.cgpa = cgpa;
     }
+    // Using Accessors to return the values of private variables
+    public String getName() { return name; }
+    public int getPRN() { return prn; }
+    public String getBranch() { return branch; }
+    public String getBatch() { return batch; }
+    public float getCGPA() { return cgpa; }
 }
