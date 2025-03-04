@@ -37,3 +37,16 @@ class Main {
                     scan.nextLine();
                     operations.addStudent(new Student(name, prn, branch, batch, cgpa)); // Adding student to list
                     break;
+                case 2:
+                    // Displaying all students
+                    operations.displayStudents();
+                    break;
+                case 3:
+                    // Searching student by PRN
+                    System.out.print("Enter PRN to search: ");
+                    prn = scan.nextInt();
+                    scan.nextLine();
+                    Student student = operations.searchByPRN(prn);
+                    if (student != null) student.display();
+                    else System.out.println("Student not found.");
+                    break;
