@@ -30,4 +30,16 @@ class StudentOperations { // Defining a StudentOperations class that manages a l
         if (position >= 0 && position < students.size()) return students.get(position); //Checks if position is within valid index range 
         return null;
     }
+
+    public boolean updateStudent(int prn, String name, String branch, String batch, float cgpa) {
+        Student student = searchByPRN(prn); // Finds the student by their PRN
+        if (student != null) { // If found, then updates their details by setter methods declared in Student.java
+            student.setName(name);
+            student.setBranch(branch);
+            student.setBatch(batch);
+            student.setCGPA(cgpa);
+            return true;
+        }
+        return false;
+    }
 }
