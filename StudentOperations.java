@@ -25,4 +25,9 @@ class StudentOperations { // Defining a StudentOperations class that manages a l
         }
         return null; // Returns null if not found
     }
+
+    public Student searchByPosition(int position) {
+        if (position >= 0 && position < students.size()) return students.get(position); //Checks if position is within valid index range 
+        return null;
+    }
 }
