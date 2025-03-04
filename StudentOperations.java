@@ -18,4 +18,11 @@ class StudentOperations { // Defining a StudentOperations class that manages a l
         }
         return null; // Returns null if not found
     }
+
+    public Student searchByName(String name) {
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) return student; // Loops through the list and finds the entered student name (case-insensitive)
+        }
+        return null; // Returns null if not found
+    }
 }
