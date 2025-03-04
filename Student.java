@@ -28,4 +28,9 @@ class Student { // Defining a class named Student
     public void setBranch(String branch) { this.branch = branch; }
     public void setBatch(String batch) { this.batch = batch; }
     public void setCGPA(float cgpa) { this.cgpa = cgpa; }
+
+    // Printing all the student details
+    public void display() {
+        System.out.println("Name: " + name + " | PRN: " + prn + " | Branch: " + branch + " | Batch: " + batch + " | CGPA: " + cgpa);
+    }
 }
