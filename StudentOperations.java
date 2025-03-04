@@ -11,4 +11,11 @@ class StudentOperations { // Defining a StudentOperations class that manages a l
     public void displayStudents() {
         for (Student student : students) { student.display(); } // Iterates through all objects and prints the student details
     }
+
+    public Student searchByPRN(int prn) {
+        for (Student student : students) {
+            if (student.getPRN() == prn) return student; // Loops through the list and finds the entered student PRN
+        }
+        return null; // Returns null if not found
+    }
 }
