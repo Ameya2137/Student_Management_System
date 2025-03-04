@@ -96,4 +96,14 @@ class Main {
                     else
                         System.out.println("Student not found.");
                     break;
+                case 8:
+                    // Prints "Exiting..." and terminates the loop.
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again."); // If the user does choose a number between 1-8, the following error message is returned
+            }
+        } while (choice != 8); // Repeats the menu until the user selects 8 ,i.e. until the user selects Exit option
+    }
+}
                 
