@@ -14,7 +14,6 @@ A simple menu-driven Java program that demonstrates the concepts of classes, con
 
 - Java
 - ArrayList for dynamic storage
-- Object-Oriented Programming (OOP) concepts
 
 ## How to Run
 
@@ -29,5 +28,5 @@ A simple menu-driven Java program that demonstrates the concepts of classes, con
 ## File Structure
 
 - Student.java: Defines the Student class and attributes.
-- StudentOperations.java: Manages CRUD operations on the student list.
+- StudentOperations.java: Manages CRUD operations on the Student list.
 - Main.java: Contains the menu-driven program for user interaction.
