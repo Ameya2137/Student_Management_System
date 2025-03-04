@@ -58,4 +58,13 @@ class Main {
                     if (student != null) student.display();
                     else System.out.println("Student not found.");
                     break;
+                case 5:
+                    // Searches for a student by position i.e index in the arraylist
+                    System.out.print("Enter Position (Index) to search: ");
+                    int position = scan.nextInt();
+                    scan.nextLine();
+                    student = operations.searchByPosition(position); // Searches for the student's position in the arraylist
+                    if (student != null) student.display();
+                    else System.out.println("Invalid position.");
+                    break;
                 
