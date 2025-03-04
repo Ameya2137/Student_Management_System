@@ -86,4 +86,14 @@ class Main {
                     else
                         System.out.println("Student not found.");
                     break;
+                case 7:
+                    // Finds a student by PRN and deletes them
+                    System.out.print("Enter PRN of student to delete: ");
+                    prn = scan.nextInt();
+                    scan.nextLine();
+                    if (operations.deleteStudent(prn)) // Calls deleteStudent(prn) that has been declared in StudentOperations.java
+                        System.out.println("Student deleted successfully.");
+                    else
+                        System.out.println("Student not found.");
+                    break;
                 
