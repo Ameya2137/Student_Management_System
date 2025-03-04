@@ -42,4 +42,13 @@ class StudentOperations { // Defining a StudentOperations class that manages a l
         }
         return false;
     }
+
+    public boolean deleteStudent(int prn) {
+        Student student = searchByPRN(prn); // Finds the student by their PRN
+        if (student != null) {
+            students.remove(student); // If found, then removes them 
+            return true;
+        }
+        return false;
+    }
 }
