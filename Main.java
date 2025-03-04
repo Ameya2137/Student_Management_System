@@ -3,7 +3,7 @@
 //Batch: 2023-27 (A1)
 
 // Main.java
-import java.util.*; // Importing Scanner and ArrayList utilities
+import java.util.*; // Importing Java utilities
 
 class Main {
     public static void main(String[] args) {
@@ -46,7 +46,16 @@ class Main {
                     System.out.print("Enter PRN to search: ");
                     prn = scan.nextInt();
                     scan.nextLine();
-                    Student student = operations.searchByPRN(prn);
+                    Student student = operations.searchByPRN(prn); // Searches for the student's PRN
                     if (student != null) student.display();
                     else System.out.println("Student not found.");
                     break;
+                case 4:
+                    // Searching student by Name
+                    System.out.print("Enter Name to search: ");
+                    name = scan.nextLine();
+                    student = operations.searchByName(name); // Searches for the student's name
+                    if (student != null) student.display();
+                    else System.out.println("Student not found.");
+                    break;
+                
