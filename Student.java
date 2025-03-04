@@ -16,10 +16,16 @@ class Student { // Defining a class named Student
         this.batch = batch;
         this.cgpa = cgpa;
     }
-    // Using Accessors to return the values of private variables
+    // Using Accessors (Getter Methods) to return the values of private variables
     public String getName() { return name; }
     public int getPRN() { return prn; }
     public String getBranch() { return branch; }
     public String getBatch() { return batch; }
     public float getCGPA() { return cgpa; }
+
+    // Using Mutators (Setter Methods) to modify the values of private variables
+    public void setName(String name) { this.name = name; }
+    public void setBranch(String branch) { this.branch = branch; }
+    public void setBatch(String batch) { this.batch = batch; }
+    public void setCGPA(float cgpa) { this.cgpa = cgpa; }
 }
