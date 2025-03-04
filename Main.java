@@ -67,4 +67,23 @@ class Main {
                     if (student != null) student.display();
                     else System.out.println("Invalid position.");
                     break;
+                case 6:
+                    // Finds a student by PRN and updates their details.
+                    System.out.print("Enter PRN of student to update: ");
+                    prn = scan.nextInt();
+                    scan.nextLine();
+                    System.out.print("Enter New Name: ");
+                    name = scan.nextLine();
+                    System.out.print("Enter New Branch: ");
+                    branch = scan.nextLine();
+                    System.out.print("Enter New Batch: ");
+                    batch = scan.nextLine();
+                    System.out.print("Enter New CGPA: ");
+                    cgpa = scan.nextFloat();
+                    scan.nextLine();
+                    if (operations.updateStudent(prn, name, branch, batch, cgpa)) // Calls updateStudent(prn, name, branch, batch, cgpa) that has been declared in StudentOperations.java
+                        System.out.println("Student updated successfully.");
+                    else
+                        System.out.println("Student not found.");
+                    break;
                 
