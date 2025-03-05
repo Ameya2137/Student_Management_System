@@ -17,7 +17,7 @@ A simple menu-driven Java program that demonstrates the concepts of classes, con
 
 ## How to Run
 
-- Clone the repository: git clone https://github.com/your-username/Student-Management-System.git
+- Clone the repository: git clone https://github.com/Ameya2137/Student_Management_System.git
 
 - Navigate to the project directory: cd Student-Management-System
 
